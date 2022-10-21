@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:singleSelection="true">
+
+
+            <Button
+                android:id="@+id/switchSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="đăng ký"
+                android:textSize="17sp" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp">
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="Tài khoản"
+
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+            android:background="@drawable/forget"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="Mật khẩu"
+
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+            android:background="@drawable/forget"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="Nhập lại mật khẩu"
+
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/forget"/>
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+
+                android:text="Đăng ký"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"/>
+            <Button
+                android:id="@+id/btnVeDangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn có tài khoản? Đăng nhập"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#0d6e6a"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/facebook"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:layout_marginHorizontal="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/google"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/twitter"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

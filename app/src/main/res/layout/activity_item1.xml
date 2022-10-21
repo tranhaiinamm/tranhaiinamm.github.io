@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgplay"
+    tools:context=".Activity_item1">
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_revert" />-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:text="Back" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/bglis">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:textStyle="bold"
+               android:textSize="16sp"
+               android:text="00:00"
+               android:gravity="center"
+               android:layout_weight="0.5"
+               android:textColor="#ffff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+            <SeekBar
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="00:00"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:src="@drawable/ic_shuffle_icon"
+            android:scaleType="fitXY"
+
+            android:layout_marginRight="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+            <ImageButton
+                android:src="@drawable/undo_ic_icon"
+                android:scaleType="fitXY"
+
+                android:layout_marginRight="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:src="@drawable/ic_play"
+                android:scaleType="fitXY"
+
+                android:layout_marginRight="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:src="@drawable/redo_ic_icon"
+                android:scaleType="fitXY"
+
+                android:layout_marginRight="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:src="@drawable/cached_ic_icon"
+                android:scaleType="fitXY"
+
+                android:layout_marginRight="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/nav_bg"
+                app:itemTextColor="@drawable/item_active"
+                app:itemIconTint="@drawable/item_active"
+                app:menu="@menu/menu_item" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
